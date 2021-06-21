@@ -1,3 +1,4 @@
-.is-underline {
-    text-decoration: underline;
+.current-section {
+    border-top: 3px solid black !important;
+    border-radius: 0;
 }
