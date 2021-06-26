@@ -2,3 +2,12 @@
     border-top: 3px solid black !important;
     border-radius: 0;
 }
+.axolotl {
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/Axolote_Ambystoma_mexicanum.jpg");
+}
