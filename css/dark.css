@@ -1,3 +1,52 @@
 @media (prefers-color-scheme: dark) {
+	.button.nav-button {
+		border: none;
+	}
+	.button.nav-button:hover {
+		border: none;
+		background-color: hsl(0, 0%, 21%);
+	}
+	.current-section {
+		border-top: 3px solid white !important;
+		border-radius: 4px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	body {
+		background-color: #000000;
+		color: hsl(0, 0%, 80%);
+	}
 
+	strong {
+		color: white;
+	}
+
+	.navbar {
+		background-color: black;
+	}
+
+	.navbar .button {
+		background-color: black;
+		color: hsl(0, 0%, 80%);
+	}
+
+	.data-card {
+		background-color: hsl(0, 0%, 21%);
+	}
+
+	.title {
+		color: white;
+	}
+
+	.subtitle {
+		color: hsl(0, 0%, 80%);
+	}
+
+	.button.is-info.is-inverted {
+		background-color: black;
+	}
+
+	.button.is-info.is-inverted:hover {
+		background-color: hsl(0, 0%, 21%);
+	}
 }

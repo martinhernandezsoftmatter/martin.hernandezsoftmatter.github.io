@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: light) {
+	.button.nav-button {
+		border: none;
+	}
+	.button.nav-button:hover {
+		border: none;
+		background-color: hsl(0, 0%, 96%);
+	}
+	.current-section {
+		border-top: 3px solid black !important;
+		border-radius: 4px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.data-card {
+		background-color: hsl(0, 0%, 96%);
+	}
+}

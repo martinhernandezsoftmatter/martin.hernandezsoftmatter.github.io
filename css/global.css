@@ -1,12 +1,8 @@
-.current-section {
-    border-top: 3px solid black !important;
-    border-radius: 0;
-}
 .axolotl {
-    width: 100vw;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/WaterFallAguaAzul.jpg");
+	width: 100vw;
+	height: 50vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/WaterFallAguaAzul.jpg");
 }
