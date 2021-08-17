@@ -30,9 +30,14 @@
 		color: hsl(0, 0%, 80%);
 	}
 
-	.data-card {
+	.surface-1 {
 		background-color: hsl(0, 0%, 21%);
 	}
+
+    .surface-1 a:hover {
+        color: hsl(229, 53%, 53%);
+        text-decoration: underline;
+    }
 
 	.title {
 		color: white;
@@ -49,4 +54,14 @@
 	.button.is-info.is-inverted:hover {
 		background-color: hsl(0, 0%, 21%);
 	}
+
+    .cinvestav-link {
+        margin: 12px;
+        color: hsl(229, 53%, 53%);
+    }
+
+    .cinvestav-link:hover {
+        margin: 12px;
+        text-decoration: underline;
+    }
 }

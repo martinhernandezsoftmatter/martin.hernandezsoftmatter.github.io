@@ -6,3 +6,11 @@
 	background-size: cover;
 	background-image: url("../img/WaterFallAguaAzul.jpg");
 }
+
+.text-axolotl {
+    text-shadow: 2px 2px 0 black;
+}
+
+.navbar-item img {
+    max-height: unset !important;
+}

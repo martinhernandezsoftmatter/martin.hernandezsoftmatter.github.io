@@ -12,7 +12,15 @@
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
-	.data-card {
+	.surface-1 {
 		background-color: hsl(0, 0%, 96%);
 	}
+
+    .cinvestav-link {
+        margin: 12px;
+    }
+
+    .cinvestav-link:hover {
+        text-decoration: underline;
+    }
 }
