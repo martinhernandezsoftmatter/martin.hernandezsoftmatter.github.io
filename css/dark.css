@@ -13,6 +13,7 @@
 		border-top-right-radius: 0;
 	}
 	body {
+		min-height: 100vh;
 		background-color: #000000;
 		color: hsl(0, 0%, 80%);
 	}
@@ -64,4 +65,21 @@
         margin: 12px;
         text-decoration: underline;
     }
+
+	a.navbar-link.teaching {
+		color: hsl(0, 0%, 80%);
+	}
+
+	.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
+		background-color: hsl(0, 0%, 21%);
+		color: hsl(0, 0%, 80%);
+	}
+
+	.navbar-dropdown {
+		background-color: black !important;
+	}
+
+	.navbar-dropdown .navbar-item {
+		color: hsl(0, 0%, 80%);
+	}
 }
