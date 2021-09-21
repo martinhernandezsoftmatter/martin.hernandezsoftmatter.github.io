@@ -1,16 +1,31 @@
-.axolotl {
+.image-header {
 	width: 100vw;
 	height: 50vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.agua-azul-image {
 	background-image: url("../img/WaterFallAguaAzul.jpg");
 }
 
-.text-axolotl {
-    text-shadow: 2px 2px 0 black;
+.chihuahua-dog-image {
+	background-image: url("../img/ChihuahuaDog.jpg");
+}
+
+.giant-crystals-image {
+	background-image: url("../img/NaicaCave-of-GiantCrystals-Chihuahua-Mexico.jpg");
+}
+
+.riviera-maya-image {
+	background-image: url("../img/riviera-maya-mexico.jpg");
+}
+
+.text-image-header {
+	text-shadow: 2px 2px 0 black;
 }
 
 .navbar-item img {
-    max-height: unset !important;
+	max-height: unset !important;
 }
