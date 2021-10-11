@@ -18,7 +18,7 @@ itemTheme.forEach((item) => {
 
 function changeTheme(theme) {
 	if (theme === SYSTEM_THEME || !currentTheme) {
-		if (prefersDarkMode) {
+		if (prefersDarkMode()) {
 			document.documentElement.setAttribute(THEME_SELECTOR, DARK_THEME);
 		} else {
 			document.documentElement.setAttribute(THEME_SELECTOR, LIGHT_THEME);
@@ -42,3 +42,7 @@ function prefersDarkMode() {
 
 const currentTheme = localStorage.getItem(THEME_KEY);
 changeTheme(currentTheme);
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+	changeTheme(currentTheme);
+});

@@ -1,23 +1,96 @@
 :root {
 	--primary-color: #000000;
-	--secondary-color: #485fC7;
-	--font-color: #4A4A4A;
-	--bg-color: #FFFFFF;
+	--secondary-color: #485fc7;
+	--font-color: #4a4a4a;
+	--bg-color: #ffffff;
 	--title-color: #000000;
 	--subtitle-color: #363636;
-	--hover-color: #F5F5F5;
+	--hover-color: #f5f5f5;
 	--surface-1-bg-color: hsl(0, 0%, 96%);
 }
 
 [data-theme="dark"] {
-	--primary-color: #FFFFFF;
-	--secondary-color: #485fC7;
-	--font-color: #CCCCCC;
+	--primary-color: #ffffff;
+	--secondary-color: #485fc7;
+	--font-color: #cccccc;
 	--bg-color: #000000;
-	--title-color: #FFFFFF;
-	--subtitle-color: #CCCCCC;
+	--title-color: #ffffff;
+	--subtitle-color: #cccccc;
 	--hover-color: #363636;
 	--surface-1-bg-color: hsl(0, 0%, 21%);
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+strong {
+	color: var(--font-color);
+}
+.divider {
+	background-color: var(--primary-color);
+}
+.button.nav-button {
+	border: none;
+}
+.button.nav-button:hover {
+	border: none;
+	background-color: var(--hover-color);
+}
+.current-section {
+	border-top: 3px solid var(--primary-color) !important;
+	border-radius: 4px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.navbar {
+	background-color: var(--bg-color);
+}
+.navbar .button {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+.surface-1 {
+	background-color: var(--surface-1-bg-color);
+}
+.surface-1 a:hover {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+.title {
+	color: var(--title-color);
+}
+.subtitle {
+	color: var(--subtitle-color);
+}
+.button.is-info.is-inverted {
+	background-color: var(--bg-color);
+}
+.button.is-info.is-inverted:hover {
+	background-color: var(--hover-color);
+}
+.cinvestav-link {
+	margin: 12px;
+	color: var(--secondary-color);
+}
+.cinvestav-link:hover {
+	text-decoration: underline;
+}
+a.navbar-link {
+	color: var(--font-color);
+}
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+.navbar-dropdown {
+	background-color: var(--bg-color);
+}
+.navbar-dropdown .navbar-item {
+	color: var(--font-color);
 }
 
 .image-header {
