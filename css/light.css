@@ -1,25 +1,51 @@
 @media (prefers-color-scheme: light) {
+	body {
+		min-height: 100vh;
+		background-color: var(--bg-color);
+		color: var(--font-color);
+	}
+	strong {
+		color: var(--font-color);
+	}
 	.button.nav-button {
 		border: none;
 	}
 	.button.nav-button:hover {
 		border: none;
-		background-color: hsl(0, 0%, 96%);
+		background-color: var(--hover-color);
 	}
 	.current-section {
-		border-top: 3px solid black !important;
+		border-top: 3px solid var(--primary-color) !important;
 		border-radius: 4px;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
-	.surface-1 {
-		background-color: hsl(0, 0%, 96%);
+	.navbar {
+		background-color: var(--bg-color);
 	}
-
+	.navbar .button {
+		background-color: var(--bg-color);
+		color: var(--font-color);
+	}
+	.surface-1 {
+		background-color: var(--surface-1-bg-color);
+	}
+	.title {
+		color: var(--font-color);
+	}
+	.subtitle {
+		color: var(--heading-color);
+	}
+	.button.is-info.is-inverted {
+		background-color: var(--bg-color);
+	}
+	.button.is-info.is-inverted:hover {
+		background-color: var(--hover-color);
+	}
     .cinvestav-link {
         margin: 12px;
+		color: var(--secondary-color);
     }
-
     .cinvestav-link:hover {
         text-decoration: underline;
     }

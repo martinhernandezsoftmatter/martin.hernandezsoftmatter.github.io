@@ -1,3 +1,23 @@
+:root {
+	--primary-color: #0A0A0A;
+	--secondary-color: #485fC7;
+	--font-color: #4A4A4A;
+	--bg-color: #FFFFFF;
+	--heading-color: #363636;
+	--hover-color: #F5F5F5;
+	--surface-1-bg-color: hsl(0, 0%, 96%);
+}
+
+[data-theme="dark"] {
+	--primary-color: #FFFFFF;
+	--secondary-color: #485fC7;
+	--font-color: #CCCCCC;
+	--bg-color: #000000;
+	--heading-color: #FFFFFF;
+	--hover-color: #363636;
+	--surface-1-bg-color: hsl(0, 0%, 21%);
+}
+
 .image-header {
 	width: 100vw;
 	height: 50vh;
