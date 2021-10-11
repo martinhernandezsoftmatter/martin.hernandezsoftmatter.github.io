@@ -7,6 +7,9 @@
 	strong {
 		color: var(--font-color);
 	}
+	.divider {
+		background-color: var(--primary-color) !important;
+	}
 	.button.nav-button {
 		border: none;
 	}
@@ -36,10 +39,10 @@
         text-decoration: underline;
     }
 	.title {
-		color: var(--font-color);
+		color: var(--title-color);
 	}
 	.subtitle {
-		color: var(--heading-color);
+		color: var(--subtitle-color);
 	}
 	.button.is-info.is-inverted {
 		background-color: var(--bg-color);

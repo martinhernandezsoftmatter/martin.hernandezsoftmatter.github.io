@@ -1,9 +1,10 @@
 :root {
-	--primary-color: #0A0A0A;
+	--primary-color: #000000;
 	--secondary-color: #485fC7;
 	--font-color: #4A4A4A;
 	--bg-color: #FFFFFF;
-	--heading-color: #363636;
+	--title-color: #000000;
+	--subtitle-color: #363636;
 	--hover-color: #F5F5F5;
 	--surface-1-bg-color: hsl(0, 0%, 96%);
 }
@@ -13,7 +14,8 @@
 	--secondary-color: #485fC7;
 	--font-color: #CCCCCC;
 	--bg-color: #000000;
-	--heading-color: #FFFFFF;
+	--title-color: #FFFFFF;
+	--subtitle-color: #CCCCCC;
 	--hover-color: #363636;
 	--surface-1-bg-color: hsl(0, 0%, 21%);
 }
