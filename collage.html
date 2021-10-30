@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Martín Hernández - Collage</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <link rel="stylesheet" href="./css/global.css">
-        <script defer src="js/theme.js"></script>
-      </head>
-      <body>
-        <nav class="navbar">
-            <div class="navbar-menu">
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <a href="index.html" class="button nav-button">Home</a>
-                  <a href="papers.html" class="button nav-button">Papers</a>
-                  <a href="postdoc.html" class="button nav-button">Postdoc</a>
-                  <a href="research.html" class="button nav-button">Research</a>
-                  <a href="teaching.html" class="button nav-button">Teaching</a>
-                  <a href="collage.html" class="button nav-button current-section">Collage</a>
-                </div>
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">Theme</a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item item-theme">Light</a>
-                    <a class="navbar-item item-theme">Dark</a>
-                    <a class="navbar-item item-theme">System</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="container">
-              Collage
-          </div>
-      </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martín Hernández - Collage</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <script defer src="js/theme.js"></script>
+  <script defer src="js/navbar.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <section class="navbar-brand">
+      <button id="hamburguer-button" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </section>
+    
+    <section id="navbar-menu" class="navbar-menu">
+      <section class="navbar-end">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="papers.html" class="navbar-item">Papers</a>
+        <a href="postdoc.html" class="navbar-item">Postdoc</a>
+        <a href="research.html" class="navbar-item">Research</a>
+        <a href="teaching.html" class="navbar-item">Teaching</a>
+        <a href="collage.html" class="navbar-item current-section">Collage</a>
+        <span class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Theme</a>
+          <section class="navbar-dropdown">
+            <a class="navbar-item item-theme">Light</a>
+            <a class="navbar-item item-theme">Dark</a>
+            <a class="navbar-item item-theme">System</a>
+          </section>
+        </span>
+      </section>
+    </section>
+  </nav>
+
+  <div class="container">Collage</div>
+</body>
 </html>

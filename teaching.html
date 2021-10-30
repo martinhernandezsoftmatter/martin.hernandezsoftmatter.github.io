@@ -6,30 +6,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/global.css" />
   <script defer src="js/theme.js"></script>
+  <script defer src="js/navbar.js"></script>
   <title>Martín Hernández - Teaching</title>
 </head>
 <body>
   <nav class="navbar">
-    <li class="navbar-menu">
-      <li class="navbar-end">
-        <div class="navbar-item">
-          <a href="index.html" class="button nav-button">Home</a>
-          <a href="papers.html" class="button nav-button">Papers</a>
-          <a href="postdoc.html" class="button nav-button">Postdoc</a>
-          <a href="research.html" class="button nav-button">Research</a>
-          <a href="research.html" class="button nav-button current-section">Teaching</a>
-          <a href="collage.html" class="button nav-button">Collage</a>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
+    <section class="navbar-brand">
+      <button id="hamburguer-button" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </section>
+    
+    <section id="navbar-menu" class="navbar-menu">
+      <section class="navbar-end">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="papers.html" class="navbar-item">Papers</a>
+        <a href="postdoc.html" class="navbar-item">Postdoc</a>
+        <a href="research.html" class="navbar-item">Research</a>
+        <a href="teaching.html" class="navbar-item current-section">Teaching</a>
+        <a href="collage.html" class="navbar-item">Collage</a>
+        <span class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Theme</a>
-          <div class="navbar-dropdown">
+          <section class="navbar-dropdown">
             <a class="navbar-item item-theme">Light</a>
             <a class="navbar-item item-theme">Dark</a>
             <a class="navbar-item item-theme">System</a>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
+        </span>
+      </section>
+    </section>
   </nav>
 
   <header class="hero is-success image-header riviera-maya-image">

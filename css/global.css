@@ -28,23 +28,45 @@ body {
 strong {
 	color: var(--font-color);
 }
+a:hover {
+	color: var(--secondary-color);
+}
 .divider {
 	background-color: var(--primary-color);
 }
-.button.nav-button {
-	border: none;
+a.navbar-item {
+	margin: 8px 0;
+	color: var(--font-color);
+	border-radius: 5px;
 }
-.button.nav-button:hover {
+a.navbar-item:hover {
 	border: none;
 	background-color: var(--hover-color);
 }
 .current-section {
-	border-top: 3px solid var(--primary-color) !important;
-	border-radius: 4px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
+	color: var(--secondary-color) !important;
+	border-top: 3px solid var(--secondary-color) !important;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+@media screen and (max-width: 1023px) {
+	.current-section {
+		border-top: none !important;
+	}
+	.navbar-item.has-dropdown .navbar-dropdown {
+		display: none;
+	}
+	.navbar-item.has-dropdown.is-active .navbar-dropdown {
+		display: block;
+	}
 }
 .navbar {
+	background-color: var(--bg-color);
+}
+#hamburguer-button span {
+	color: var(--font-color);
+}
+.navbar-menu.is-active {
 	background-color: var(--bg-color);
 }
 .navbar .button {
@@ -91,6 +113,16 @@ a.navbar-link {
 }
 .navbar-dropdown .navbar-item {
 	color: var(--font-color);
+}
+
+.navbar-dropdown a.navbar-item:hover {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+
+.navbar-dropdown a.navbar-item.is-active {
+	background-color: var(--hover-color);
+	color: var(--secondary-color);
 }
 
 .image-header {
