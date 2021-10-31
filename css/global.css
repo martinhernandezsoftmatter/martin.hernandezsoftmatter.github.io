@@ -156,3 +156,7 @@ a.navbar-link {
 .navbar-item img {
 	max-height: unset !important;
 }
+
+.navbar-brand .navbar-item {
+	margin: 0;
+}

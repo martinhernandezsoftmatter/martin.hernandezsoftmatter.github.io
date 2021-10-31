@@ -6,46 +6,52 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/global.css">
   <script defer src="js/theme.js"></script>
+  <script defer src="js/navbar.js"></script>
   <title>Martín Hernández - Papers</title>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a href="https://www.fis.cinvestav.mx/" class="navbar-item">
-            <img src="img/cinvestav.jpg" alt="" width="40" height="40"/>
-            <span class="cinvestav-link">Physics departement</span>
-          </a>
-        </div>
-    <div class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-item">
-            <a href="cinvestav.html" class="button nav-button">Home</a>
-            <a href="papers-cinvestav.html" class="button nav-button current-section">Papers</a>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <section class="navbar-brand">
+      <a href="https://www.fis.cinvestav.mx/" class="navbar-item">
+        <img src="img/cinvestav.jpg" alt="" width="40" height="40"/>
+        <span class="cinvestav-link">Go to Physics departement</span>
+      </a>
+      <button id="hamburguer-button" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <section id="navbar-menu" class="navbar-menu">
+      <section class="navbar-end">
+        <a href="cinvestav.html" class="navbar-item">Home</a>
+        <a href="papers-cinvestav.html" class="navbar-item current-section">Papers</a>
+        <span class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Theme</a>
-          <div class="navbar-dropdown">
+          <section class="navbar-dropdown">
             <a class="navbar-item item-theme">Light</a>
             <a class="navbar-item item-theme">Dark</a>
             <a class="navbar-item item-theme">System</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+          </section>
+        </span>
+      </section>
+    </section>
+  </nav>  
+
   <header class="hero is-success image-header agua-azul-image">
-    <div class="hero-body">
+    <section class="hero-body">
       <p class="title text-image-header">Papers</p>
-    </div>
-    <div class="hero-foot">
+    </section>
+    <section class="hero-foot">
       <p class="subtitle has-text-right mr-5 text-image-header">Agua Azul Waterfall, Chiapas, Mexico</p>
     </div>
   </header>
 
   <main class="container">
     <section class="section">
-      <div class="columns">
-        <div class="column is-8 surface-1">
+      <section class="columns">
+        <section class="column is-8 surface-1">
           <a href="http://www.fis.cinvestav.mx/~marther/SoftMatter.pdf">First principle stochastic method to describe rheology in ferrolfuids.</a>
           <p>R. Peredo-Ortiz, M. Hernandez-Contreras, R. Hernandez Gomez J. Chem. Phys. 153, 184903, 2020.</p>
           <br>
@@ -121,8 +127,8 @@
           <br>
           <a href="http://">-Omega(-)->Lambda-Kappa(-)-Gamma and the Omega(-) magnetic moment</a>
           <p>Hernandez M, Castro GL, Lucio JL. PHYSICAL REVIEW D,44,794-798,1991.</p>
-        </div>
-        <div class="column is-4 surface-1">
+        </section>
+        <section class="column is-4 surface-1">
           <p class="title">General</p>
           <a href="http://www.fis.cinvestav.mx/~marther/la_inteligencia_artificial_y_sus_aplicaciones.pdf">Artificial intelligence and its applications (In Spanish)</a>
           <p>M. Hernandez-Contreras, Avance y Perspectiva 6, 1,2019.</p>
@@ -137,8 +143,8 @@
           <p class="subtitle">3 PhD thesis</p>
           <p class="subtitle">6 MsC thesis</p>
           <p class="subtitle">1 BsC thesis</p>
-        </div>
-      </div>
+        </section>
+      </section>
     </section>
   </main>
 </body>
