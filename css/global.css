@@ -1,6 +1,6 @@
 :root {
 	--primary-color: #000000;
-	--secondary-color: #485fc7;
+	--secondary-color: #18d860;
 	--font-color: #4a4a4a;
 	--bg-color: #ffffff;
 	--title-color: #000000;
@@ -11,7 +11,7 @@
 
 [data-theme="dark"] {
 	--primary-color: #ffffff;
-	--secondary-color: #485fc7;
+	--secondary-color: #18d860;
 	--font-color: #cccccc;
 	--bg-color: #000000;
 	--title-color: #ffffff;
@@ -28,8 +28,12 @@ body {
 strong {
 	color: var(--font-color);
 }
+a {
+	color: var(--secondary-color);
+}
 a:hover {
 	color: var(--secondary-color);
+	text-decoration: underline;
 }
 .divider {
 	background-color: var(--primary-color);
@@ -41,7 +45,18 @@ a.navbar-item {
 }
 a.navbar-item:hover {
 	border: none;
+	color: var(--secondary-color);
 	background-color: var(--hover-color);
+	text-decoration: none;
+}
+a.navbar-link {
+	color: var(--font-color);
+	text-decoration: none;
+}
+
+a.navbar-link:hover {
+	color: var(--secondary-color);
+	text-decoration: none;
 }
 .current-section {
 	color: var(--secondary-color) !important;
@@ -76,10 +91,6 @@ a.navbar-item:hover {
 .surface-1 {
 	background-color: var(--surface-1-bg-color);
 }
-.surface-1 a:hover {
-	color: var(--primary-color);
-	text-decoration: underline;
-}
 .title {
 	color: var(--title-color);
 }
@@ -98,9 +109,6 @@ a.navbar-item:hover {
 }
 .cinvestav-link:hover {
 	text-decoration: underline;
-}
-a.navbar-link {
-	color: var(--font-color);
 }
 .navbar-item.has-dropdown.is-active .navbar-link,
 .navbar-item.has-dropdown:focus .navbar-link,
