@@ -1,9 +1,9 @@
 const hamburguerButton = document.querySelector("#hamburguer-button")
 hamburguerButton.addEventListener("click", toggleNavbar);
 
-document.querySelector(".navbar-item.has-dropdown").addEventListener("click", (event) => {
+/*document.querySelector(".navbar-item.has-dropdown").addEventListener("click", (event) => {
 	toggleNavbarDropdown(event.target.parentElement);
-});
+});*/
 
 function toggleNavbar() {
 	hamburguerButton.classList.toggle("is-active");

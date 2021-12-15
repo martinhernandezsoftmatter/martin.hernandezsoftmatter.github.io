@@ -1,52 +1,103 @@
 const THEME_KEY = "theme";
+const LIGHT_THEME_VALUE = "light";
+const DARK_THEME_VALUE = "dark";
+const SYSTEM_THEME_VALUE = "system";
 const THEME_SELECTOR = "data-theme";
-const LIGHT_THEME = "light";
-const DARK_THEME = "dark";
-const SYSTEM_THEME = "system";
 
-const itemTheme = Array.from(document.querySelectorAll(".item-theme"));
-itemTheme.forEach((item) => {
-	item.addEventListener(
-		"click",
-		() => {
-			changeTheme(item.textContent.toLowerCase());
-			saveTheme(item.textContent.toLowerCase());
-			changeActiveElement(item);
-		},
-		false
-	);
-});
+/**
+ * @typedef {LIGHT_THEME_VALUE|DARK_THEME_VALUE|SYSTEM_THEME_VALUE} ThemeValue
+ */
 
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+/**
+ * Executes when page finishes loading.
+ */
+function init() {
+	setupListeners();
+
+	const currentTheme = loadTheme();
 	changeTheme(currentTheme);
-});
 
+	changeDropdownDefaultValue(currentTheme);
+}
+
+/**
+ * Changes dropdown value according to current theme. Only executes when page finishes loading.
+ * @param {ThemeValue} currentTheme
+ */
+function changeDropdownDefaultValue(currentTheme) {
+	const select = document.getElementsByName("theme-dropdown")[0];
+	select.value = currentTheme;
+}
+
+/**
+ * Loads saved theme from user preferences.
+ * @returns {ThemeValue} theme value saved previously or SYSTEM_THEME_VALUE if nothing is saved.
+ */
+function loadTheme() {
+	return localStorage.getItem(THEME_KEY) || SYSTEM_THEME_VALUE;
+}
+
+/**
+ * Adds listeners to HTML elements of the page.
+ */
+function setupListeners() {
+	window
+		.matchMedia("(prefers-color-scheme: dark)")
+		.addEventListener("change", onChangeColorScheme);
+
+	const select = document.getElementsByName("theme-dropdown")[0];
+	select.addEventListener("change", (event) => {
+		const { value } = event.target;
+		onChangeThemeDropdown(value);
+	});
+}
+
+/**
+ * Event handler that runs when `prefers-color-scheme` property changes.
+ */
+function onChangeColorScheme() {
+	const currentTheme = loadTheme();
+	changeTheme(currentTheme);
+}
+
+/**
+ * Event handler that runs when the theme dropdown's value change.
+ * @param {ThemeValue} value Theme value to use.
+ */
+function onChangeThemeDropdown(value) {
+	changeTheme(value);
+	saveTheme(value);
+}
+
+/**
+ * Changes theme of webpage.
+ * @param {ThemeValue} theme Theme value to use.
+ */
 function changeTheme(theme) {
-	if (theme === SYSTEM_THEME || !currentTheme) {
-		if (prefersDarkMode()) {
-			document.documentElement.setAttribute(THEME_SELECTOR, DARK_THEME);
+	if (theme === SYSTEM_THEME_VALUE) {
+		if (userPrefersDarkMode()) {
+			document.documentElement.setAttribute(THEME_SELECTOR, DARK_THEME_VALUE);
 		} else {
-			document.documentElement.setAttribute(THEME_SELECTOR, LIGHT_THEME);
+			document.documentElement.setAttribute(THEME_SELECTOR, LIGHT_THEME_VALUE);
 		}
 	} else {
 		document.documentElement.setAttribute(THEME_SELECTOR, theme);
 	}
 }
 
+/**
+ * Saves theme to user preferences.
+ * @param {ThemeValue} theme Theme value to use.
+ */
 function saveTheme(theme) {
 	localStorage.setItem(THEME_KEY, theme);
 }
 
-function changeActiveElement(currentElement) {
-	const previousActiveElement = document.querySelector(".item-theme.is-active");
-	if (previousActiveElement) {
-		previousActiveElement.classList.remove("is-active");
-	}
-
-	currentElement.classList.add("is-active");
-}
-
-function prefersDarkMode() {
+/**
+ * Checks the `prefers-color-scheme` property value
+ * @returns {boolean} true if property value is dark, false if not or if property is not available.
+ */
+function userPrefersDarkMode() {
 	if (!window.matchMedia) {
 		return false;
 	}
@@ -54,14 +105,4 @@ function prefersDarkMode() {
 	return window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
-const currentTheme = localStorage.getItem(THEME_KEY);
-changeTheme(currentTheme);
-let currentElementTheme = Array.from(itemTheme).find(
-	(item) => item.textContent.toLowerCase() === currentTheme
-);
-if (!currentElementTheme) {
-	currentElementTheme = Array.from(itemTheme).find(
-		(item) => item.textContent.toLowerCase() === SYSTEM_THEME
-	);
-}
-changeActiveElement(currentElementTheme);
+init();

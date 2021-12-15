@@ -113,12 +113,34 @@ a.navbar-link:hover {
 .cinvestav-link:hover {
 	text-decoration: underline;
 }
-.navbar-item.has-dropdown.is-active .navbar-link,
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link {
-	background-color: var(--hover-color);
-	color: var(--font-color);
+
+.select select {
+	background-color: var(--bg-color);
+	color: var(--primary-color);
 }
+
+.select:not(.is-multiple):not(.is-loading)::after {
+	border-color: var(--primary-color);
+}
+
+.select select:hover {
+	color: var(--secondary-color);
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+	border-color: var(--secondary-color);
+}
+
+.select select:active{
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.select:not(.is-multiple):not(.is-loading):active::after {
+	border-color: var(--primary-color);
+	color: var(--primary-color)
+}
+
 .navbar-dropdown {
 	background-color: var(--bg-color);
 }
@@ -170,8 +192,4 @@ a.navbar-link:hover {
 
 .navbar-brand .navbar-item {
 	margin: 0;
-}
-
-.navbar-link:not(.is-arrowless)::after {
-	border-color: var(--secondary-color);
 }
