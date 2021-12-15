@@ -171,3 +171,7 @@ a.navbar-link:hover {
 .navbar-brand .navbar-item {
 	margin: 0;
 }
+
+.navbar-link:not(.is-arrowless)::after {
+	border-color: var(--secondary-color);
+}
