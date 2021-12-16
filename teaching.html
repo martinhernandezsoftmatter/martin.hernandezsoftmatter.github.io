@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Webpage of Dr. Martín Hernández Contreras. Teaching page">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/global.css" />
   <script defer src="js/theme.js"></script>
@@ -10,9 +11,9 @@
   <title>Martín Hernández - Teaching</title>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Navigation bar.">
     <section class="navbar-brand">
-      <button id="hamburguer-button" class="navbar-burger">
+      <button id="hamburguer-button" class="navbar-burger" aria-label="Toggle navigation bar." aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -29,7 +30,7 @@
         <a href="collage.html" class="navbar-item">Collage</a>
         <span class="navbar-item">
           <section class="select is-fullwidth">
-            <select name="theme-dropdown">
+            <select name="theme-dropdown" aria-label="Change webpage theme.">
               <option value="light">Light</option>
               <option value="dark">Dark</option>
               <option value="system">System</option>
@@ -40,7 +41,7 @@
     </section>
   </nav>
 
-  <header class="hero is-success image-header riviera-maya-image">
+  <header class="hero is-success image-header riviera-maya-image" role="img" aria-label="Mayan's riviera, Mexico.">
     <section class="hero-body">
       <p class="title text-image-header">Teaching</p>
     </section>
@@ -51,7 +52,7 @@
 
   <main class="container">
     <section class="section">
-      <ol>
+      <ol class="internal-links-list">
         <li>
           <a href="teaching/soft-condensed-matter.html">Soft Condensed Matter</a>
         </li>
