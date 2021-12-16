@@ -131,14 +131,16 @@ a.navbar-link:hover {
 	border-color: var(--secondary-color);
 }
 
-.select select:active{
-	border-color: var(--primary-color);
+.select select:focus {
+	border-color: var(--secondary-color);
+}
+
+.select select:hover option {
 	color: var(--primary-color);
 }
 
-.select:not(.is-multiple):not(.is-loading):active::after {
-	border-color: var(--primary-color);
-	color: var(--primary-color)
+.select select:hover option:active {
+	background-color: red;
 }
 
 .navbar-dropdown {
