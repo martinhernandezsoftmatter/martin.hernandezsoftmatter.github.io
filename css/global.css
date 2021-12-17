@@ -62,6 +62,17 @@ a.navbar-item:hover {
 	text-decoration: none;
 }
 
+a.button.education-link {
+	border: none;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+
+a.button.education-link:hover {
+	background-color: var(--bg-color);
+	color: var(--secondary-color);
+}
+
 .current-section {
 	color: var(--secondary-color) !important;
 	border-top: 3px solid var(--secondary-color) !important;
