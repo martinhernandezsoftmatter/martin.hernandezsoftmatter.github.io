@@ -31,39 +31,37 @@ body {
 	background-color: var(--bg-color);
 	color: var(--font-color);
 }
+
 strong {
 	color: var(--font-color);
 }
+
 a {
 	color: var(--secondary-color);
 }
+
 a:hover {
 	color: var(--secondary-color);
 	text-decoration: underline;
 }
+
 .divider {
 	background-color: var(--primary-color);
 }
+
 a.navbar-item {
 	margin: 8px 0;
 	color: var(--font-color);
 	border-radius: 5px;
 }
+
 a.navbar-item:hover {
 	border: none;
 	color: var(--secondary-color);
 	background-color: var(--hover-color);
 	text-decoration: none;
 }
-a.navbar-link {
-	color: var(--font-color);
-	text-decoration: none;
-}
 
-a.navbar-link:hover {
-	color: var(--secondary-color);
-	text-decoration: none;
-}
 .current-section {
 	color: var(--secondary-color) !important;
 	border-top: 3px solid var(--secondary-color) !important;
@@ -74,48 +72,39 @@ a.navbar-link:hover {
 	.current-section {
 		border-top: none !important;
 	}
-	.navbar-item.has-dropdown .navbar-dropdown {
-		display: none;
-	}
-	.navbar-item.has-dropdown.is-active .navbar-dropdown {
-		display: block;
-	}
 }
+
 .navbar {
 	background-color: var(--bg-color);
 }
+
 #hamburguer-button span {
 	color: var(--font-color);
 }
+
 .navbar-menu.is-active {
 	background-color: var(--bg-color);
 }
-.navbar .button {
-	background-color: var(--bg-color);
-	color: var(--font-color);
-}
+
 .surface-1 {
 	background-color: var(--surface-1-bg-color);
 	color: var(--surface-1-color);
 }
+
 .title {
 	color: var(--title-color);
 }
+
 .subtitle {
 	color: var(--subtitle-color);
 }
+
 .button.is-info.is-inverted {
 	background-color: var(--bg-color);
 }
+
 .button.is-info.is-inverted:hover {
 	background-color: var(--hover-color);
-}
-.cinvestav-link {
-	margin: 12px;
-	color: var(--secondary-color);
-}
-.cinvestav-link:hover {
-	text-decoration: underline;
 }
 
 .select select {
@@ -141,27 +130,6 @@ a.navbar-link:hover {
 
 .select select:hover option {
 	color: var(--primary-color);
-}
-
-.select select:hover option:active {
-	background-color: red;
-}
-
-.navbar-dropdown {
-	background-color: var(--bg-color);
-}
-.navbar-dropdown .navbar-item {
-	color: var(--font-color);
-}
-
-.navbar-dropdown a.navbar-item:hover {
-	background-color: var(--hover-color);
-	color: var(--font-color);
-}
-
-.navbar-dropdown a.navbar-item.is-active {
-	background-color: var(--hover-color);
-	color: var(--secondary-color);
 }
 
 .image-header {
@@ -190,14 +158,6 @@ a.navbar-link:hover {
 
 .text-image-header {
 	text-shadow: 2px 2px 0 black;
-}
-
-.navbar-item img {
-	max-height: unset !important;
-}
-
-.navbar-brand .navbar-item {
-	margin: 0;
 }
 
 .internal-links-list {
