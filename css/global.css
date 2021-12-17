@@ -110,14 +110,6 @@ a.button.education-link:hover {
 	color: var(--subtitle-color);
 }
 
-.button.is-info.is-inverted {
-	background-color: var(--bg-color);
-}
-
-.button.is-info.is-inverted:hover {
-	background-color: var(--hover-color);
-}
-
 .select select {
 	background-color: var(--bg-color);
 	color: var(--primary-color);
